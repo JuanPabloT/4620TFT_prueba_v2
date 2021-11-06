@@ -1,0 +1,10 @@
+__stringtab: STRING, 256 0 6
+_main: CODE, 25 0 207
+__initialization: CODE, 21 0 0
+_isr: CODE, 304 0 11
+displayWrite@tabla7seg: STRING, 262 0 10
+_uartConfig: CODE, 232 0 20
+_initApp: CODE, 288 0 16
+_uartWriteByte: CODE, 315 0 8
+_uartReadByte: CODE, 272 0 16
+Total: 294

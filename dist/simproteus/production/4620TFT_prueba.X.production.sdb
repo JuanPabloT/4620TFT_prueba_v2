@@ -1,0 +1,666 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"68 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\main.c
+[e E2679 . `uc
+SPI1_DEFAULT 0
+]
+"172 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\user.c
+[e E2662 . `uc
+estado_alto 0
+estado_bajo 1
+]
+"173
+[e E2666 . `uc
+estado_leyendo 0
+estado_imprimiendo 1
+estado_esperando 2
+estado_parseando 3
+estado_parseandohr 4
+]
+"54 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\mssp.c
+[e E2321 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E2329 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E2333 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E2337 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"75 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\spi1.c
+[e E92 . `uc
+SPI1_DEFAULT 0
+]
+"7 D:\MPlab\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 D:\MPlab\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 D:\MPlab\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 D:\MPlab\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 D:\MPlab\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 D:\MPlab\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 D:\MPlab\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 D:\MPlab\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 D:\MPlab\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 D:\MPlab\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 D:\MPlab\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 D:\MPlab\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\MPlab\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 D:\MPlab\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"70 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\GFX_Library.c
+[v _abs abs `(i  1 e 2 0 ]
+"78
+[v _writeLine writeLine `(v  1 e 1 0 ]
+"127
+[v _display_drawLine display_drawLine `(v  1 e 1 0 ]
+"149
+[v _display_drawCircle display_drawCircle `(v  1 e 1 0 ]
+"192
+[v _display_drawCircleHelper display_drawCircleHelper `(v  1 e 1 0 ]
+"236
+[v _display_fillCircle display_fillCircle `(v  1 e 1 0 ]
+"253
+[v _display_fillCircleHelper display_fillCircleHelper `(v  1 e 1 0 ]
+"298
+[v _display_drawRect display_drawRect `(v  1 e 1 0 ]
+"316
+[v _display_drawRoundRect display_drawRoundRect `(v  1 e 1 0 ]
+"342
+[v _display_fillRoundRect display_fillRoundRect `(v  1 e 1 0 ]
+"367
+[v _display_drawTriangle display_drawTriangle `(v  1 e 1 0 ]
+"386
+[v _display_fillTriangle display_fillTriangle `(v  1 e 1 0 ]
+"468
+[v _display_print display_print `(v  1 e 1 0 ]
+"523
+[v _display_customChar display_customChar `(v  1 e 1 0 ]
+"601
+[v _display_setCursor display_setCursor `(v  1 e 1 0 ]
+"632
+[v _display_setTextSize display_setTextSize `(v  1 e 1 0 ]
+"643
+[v _display_setTextColor display_setTextColor `(v  1 e 1 0 ]
+"654
+[v _display_setTextColor2 display_setTextColor2 `(v  1 e 1 0 ]
+"710
+[v _display_color565 display_color565 `(ui  1 e 2 0 ]
+"54 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.c
+[v _startWrite startWrite `(v  1 e 1 0 ]
+"66
+[v _endWrite endWrite `(v  1 e 1 0 ]
+"81
+[v _writeCommand writeCommand `(v  1 e 1 0 ]
+"94
+[v _tft_begin tft_begin `(v  1 e 1 0 ]
+"153
+[v _setAddrWindow setAddrWindow `(v  1 e 1 0 ]
+"175
+[v _setRotation setRotation `(v  1 e 1 0 ]
+"206
+[v _drawPixel drawPixel `(v  1 e 1 0 ]
+"225
+[v _drawHLine drawHLine `(v  1 e 1 0 ]
+"250
+[v _drawVLine drawVLine `(v  1 e 1 0 ]
+"275
+[v _fillRect fillRect `(v  1 e 1 0 ]
+"301
+[v _fillScreen fillScreen `(v  1 e 1 0 ]
+"12 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\interrupts.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+"63 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"111
+[v _disp_texto disp_texto `(v  1 e 1 0 ]
+"52 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"68 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\mssp.c
+[v _spiReceiveWait spiReceiveWait `(v  1 s 1 spiReceiveWait ]
+"127
+[v _i2cWait i2cWait `(v  1 e 1 0 ]
+"55 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"62 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"74
+[v _SPI1_Open SPI1_Open `(uc  1 e 1 0 ]
+"94
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"19 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+"64
+[v _uartConfig uartConfig `(v  1 e 1 0 ]
+"124
+[v _uartReadByte uartReadByte `(uc  1 e 1 0 ]
+"149
+[v _tickRead tickRead `(ul  1 e 4 0 ]
+"176
+[v _inimef inimef `(v  1 e 1 0 ]
+"179
+[v _inimefcora inimefcora `(v  1 e 1 0 ]
+"183
+[v _actmef actmef `(v  1 e 1 0 ]
+"255
+[v _actmefcora actmefcora `(v  1 e 1 0 ]
+[s S814 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"100 D:\MPlab\pic\include\proc\pic18f4620.h
+[s S823 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+]
+[s S827 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SS 1 0 :1:5 
+]
+[s S830 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_SS 1 0 :1:5 
+]
+[s S833 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 nSS 1 0 :1:5 
+]
+[s S836 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S839 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S842 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S846 . 1 `S814 1 . 1 0 `S823 1 . 1 0 `S827 1 . 1 0 `S830 1 . 1 0 `S833 1 . 1 0 `S836 1 . 1 0 `S839 1 . 1 0 `S842 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES846  1 e 1 @3968 ]
+"881
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S893 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"908
+[s S902 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S911 . 1 `S893 1 . 1 0 `S902 1 . 1 0 ]
+[v _LATAbits LATAbits `VES911  1 e 1 @3977 ]
+"993
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1105
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S774 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"1132
+[s S783 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S792 . 1 `S774 1 . 1 0 `S783 1 . 1 0 ]
+[v _LATCbits LATCbits `VES792  1 e 1 @3979 ]
+"1217
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"1329
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"1381
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1603
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S319 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1857
+[s S328 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S337 . 1 `S319 1 . 1 0 `S328 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES337  1 e 1 @3988 ]
+"2047
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S359 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"2079
+[s S368 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S377 . 1 `S359 1 . 1 0 `S368 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES377  1 e 1 @3989 ]
+"2269
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"2433
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+"3499
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"3511
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"3663
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+"4445
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4670
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+"4732
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S1307 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4752
+[s S1313 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S1318 . 1 `S1307 1 . 1 0 `S1313 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES1318  1 e 1 @4038 ]
+"4802
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+"5023
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"5030
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"5934
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"6829
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"6973
+[v _CREN CREN `VEb  1 e 0 @32092 ]
+"7084
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"7651
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"7678
+[v _PSA PSA `VEb  1 e 0 @32427 ]
+"7840
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"7990
+[v _SPEN SPEN `VEb  1 e 0 @32095 ]
+"8011
+[v _SSPIF SSPIF `VEb  1 e 0 @31987 ]
+"8068
+[v _SYNC SYNC `VEb  1 e 0 @32100 ]
+"8083
+[v _T0CS T0CS `VEb  1 e 0 @32429 ]
+"8092
+[v _T0PS0 T0PS0 `VEb  1 e 0 @32424 ]
+"8095
+[v _T0PS1 T0PS1 `VEb  1 e 0 @32425 ]
+"8098
+[v _T0PS2 T0PS2 `VEb  1 e 0 @32426 ]
+"8170
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"8173
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"8275
+[v _TRISC0 TRISC0 `VEb  1 e 0 @31904 ]
+"8278
+[v _TRISC1 TRISC1 `VEb  1 e 0 @31905 ]
+"8293
+[v _TRISC6 TRISC6 `VEb  1 e 0 @31910 ]
+"8296
+[v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
+"8386
+[v _TXEN TXEN `VEb  1 e 0 @32101 ]
+"8485
+[v _nRBPU nRBPU `VEb  1 e 0 @32655 ]
+"101 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\GFX_Library.h
+[v _cursor_x cursor_x `i  1 e 2 0 ]
+"102
+[v _cursor_y cursor_y `i  1 e 2 0 ]
+"104
+[v _textcolor textcolor `ui  1 e 2 0 ]
+"105
+[v _textbgcolor textbgcolor `ui  1 e 2 0 ]
+"107
+[v _textsize textsize `uc  1 e 1 0 ]
+"113
+[v _font font `C[256][5]uc  1 e 1280 0 ]
+"135 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.h
+[v __width _width `ui  1 e 2 0 ]
+"136
+[v __height _height `ui  1 e 2 0 ]
+"137
+[v _rotation rotation `uc  1 e 1 0 ]
+"142
+[v _initcmd initcmd `C[111]uc  1 e 111 0 ]
+[s S1277 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
+"58 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\spi1.c
+[v _spi1_configuration spi1_configuration `C[1]S1277  1 s 4 spi1_configuration ]
+"10 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\user.c
+[v _tickCounter tickCounter `VEul  1 e 4 0 ]
+"172
+[v _estado_Corazon estado_Corazon `E2662  1 e 1 0 ]
+"173
+[v _estado_Display estado_Display `E2666  1 e 1 0 ]
+"63 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"109
+} 0
+"94 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.c
+[v _tft_begin tft_begin `(v  1 e 1 0 ]
+{
+"125
+[v tft_begin@addr addr `*.25Cuc  1 a 2 7 ]
+"124
+[v tft_begin@cmd cmd `uc  1 a 1 6 ]
+[v tft_begin@x x `uc  1 a 1 5 ]
+[v tft_begin@numArgs numArgs `uc  1 a 1 4 ]
+"142
+} 0
+"175
+[v _setRotation setRotation `(v  1 e 1 0 ]
+{
+[v setRotation@m m `uc  1 a 1 wreg ]
+[v setRotation@m m `uc  1 a 1 wreg ]
+[v setRotation@m m `uc  1 a 1 2 ]
+"204
+} 0
+"179 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\user.c
+[v _inimefcora inimefcora `(v  1 e 1 0 ]
+{
+"181
+} 0
+"176
+[v _inimef inimef `(v  1 e 1 0 ]
+{
+"178
+} 0
+"255
+[v _actmefcora actmefcora `(v  1 e 1 0 ]
+{
+"271
+} 0
+"183
+[v _actmef actmef `(v  1 e 1 0 ]
+{
+"184
+[v actmef@dato1 dato1 `uc  1 s 1 dato1 ]
+[v actmef@dato2 dato2 `uc  1 s 1 dato2 ]
+"185
+[v actmef@s02 s02 `[10]uc  1 s 10 s02 ]
+[v actmef@hr hr `[10]uc  1 s 10 hr ]
+"186
+[v actmef@i i `i  1 s 2 i ]
+"254
+} 0
+"124
+[v _uartReadByte uartReadByte `(uc  1 e 1 0 ]
+{
+[v uartReadByte@receivedByte receivedByte `*.30uc  1 p 1 0 ]
+"130
+} 0
+"301 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.c
+[v _fillScreen fillScreen `(v  1 e 1 0 ]
+{
+[v fillScreen@color color `ui  1 p 2 36 ]
+"303
+} 0
+"632 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\GFX_Library.c
+[v _display_setTextSize display_setTextSize `(v  1 e 1 0 ]
+{
+[v display_setTextSize@s s `uc  1 a 1 wreg ]
+[v display_setTextSize@s s `uc  1 a 1 wreg ]
+[v display_setTextSize@s s `uc  1 a 1 2 ]
+"634
+} 0
+"654
+[v _display_setTextColor2 display_setTextColor2 `(v  1 e 1 0 ]
+{
+[v display_setTextColor2@c c `ui  1 p 2 0 ]
+"656
+} 0
+"601
+[v _display_setCursor display_setCursor `(v  1 e 1 0 ]
+{
+[v display_setCursor@x x `ui  1 p 2 0 ]
+[v display_setCursor@y y `ui  1 p 2 2 ]
+"604
+} 0
+"111 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\main.c
+[v _disp_texto disp_texto `(v  1 e 1 0 ]
+{
+[v disp_texto@i i `uc  1 a 1 48 ]
+[v disp_texto@cadena cadena `*.35uc  1 p 2 44 ]
+"117
+} 0
+"468 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\GFX_Library.c
+[v _display_print display_print `(v  1 e 1 0 ]
+{
+[v display_print@c c `uc  1 a 1 wreg ]
+"483
+[v display_print@j j `uc  1 a 1 42 ]
+"482
+[v display_print@line line `uc  1 a 1 40 ]
+"481
+[v display_print@i i `uc  1 a 1 43 ]
+"468
+[v display_print@c c `uc  1 a 1 wreg ]
+"470
+[v display_print@c c `uc  1 a 1 41 ]
+"519
+} 0
+"275 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.c
+[v _fillRect fillRect `(v  1 e 1 0 ]
+{
+"286
+[v fillRect@px px `ul  1 a 4 30 ]
+"277
+[v fillRect@lo lo `uc  1 a 1 35 ]
+[v fillRect@hi hi `uc  1 a 1 34 ]
+"275
+[v fillRect@x x `ui  1 p 2 16 ]
+[v fillRect@y y `ui  1 p 2 18 ]
+[v fillRect@w w `ui  1 p 2 20 ]
+[v fillRect@h h `ui  1 p 2 22 ]
+[v fillRect@color color `ui  1 p 2 24 ]
+"293
+} 0
+"15 D:\MPlab\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"250 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.c
+[v _drawVLine drawVLine `(v  1 e 1 0 ]
+{
+"252
+[v drawVLine@lo lo `uc  1 a 1 29 ]
+[v drawVLine@hi hi `uc  1 a 1 28 ]
+"250
+[v drawVLine@x x `ui  1 p 2 16 ]
+[v drawVLine@y y `ui  1 p 2 18 ]
+[v drawVLine@h h `ui  1 p 2 20 ]
+[v drawVLine@color color `ui  1 p 2 22 ]
+"263
+} 0
+"206
+[v _drawPixel drawPixel `(v  1 e 1 0 ]
+{
+[v drawPixel@x x `ui  1 p 2 16 ]
+[v drawPixel@y y `ui  1 p 2 18 ]
+[v drawPixel@color color `ui  1 p 2 20 ]
+"214
+} 0
+"54
+[v _startWrite startWrite `(v  1 e 1 0 ]
+{
+"57
+} 0
+"153
+[v _setAddrWindow setAddrWindow `(v  1 e 1 0 ]
+{
+"155
+[v setAddrWindow@y2 y2 `ui  1 a 2 14 ]
+"154
+[v setAddrWindow@x2 x2 `ui  1 a 2 12 ]
+"153
+[v setAddrWindow@x1 x1 `ui  1 p 2 2 ]
+[v setAddrWindow@y1 y1 `ui  1 p 2 4 ]
+[v setAddrWindow@w w `ui  1 p 2 6 ]
+[v setAddrWindow@h h `ui  1 p 2 8 ]
+"167
+} 0
+"81
+[v _writeCommand writeCommand `(v  1 e 1 0 ]
+{
+[v writeCommand@cmd cmd `uc  1 a 1 wreg ]
+[v writeCommand@cmd cmd `uc  1 a 1 wreg ]
+[v writeCommand@cmd cmd `uc  1 a 1 1 ]
+"85
+} 0
+"94 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\spi1.c
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"96
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"100
+} 0
+"66 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\ILI9341.c
+[v _endWrite endWrite `(v  1 e 1 0 ]
+{
+"69
+} 0
+"52 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"62 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"74 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"55 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"60 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"74 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\spi1.c
+[v _SPI1_Open SPI1_Open `(uc  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E92  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E92  1 a 1 wreg ]
+"76
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E92  1 a 1 1 ]
+"87
+} 0
+"19 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+{
+"54
+} 0
+"64
+[v _uartConfig uartConfig `(v  1 e 1 0 ]
+{
+"81
+} 0
+"12 C:\Users\juanp\Dropbox\Mi PC (DESKTOP-P26B7NG)\Desktop\4620TFT_prueba.X\interrupts.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"27
+} 0

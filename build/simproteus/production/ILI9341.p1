@@ -1,0 +1,987 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"1111 D:\MPlab\pic\include\proc\pic18f4620.h
+[s S44 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S44 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"1121
+[s S45 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S45 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
+"1110
+[u S43 `S44 1 `S45 1 ]
+[n S43 . . . ]
+"1132
+[v _LATCbits `VS43 ~T0 @X0 0 e@3979 ]
+"59
+[s S2 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"69
+[s S3 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3 . . T0CKI AN4 ]
+"74
+[s S4 :5 `uc 1 :1 `uc 1 ]
+[n S4 . . SS ]
+"78
+[s S5 :5 `uc 1 :1 `uc 1 ]
+[n S5 . . NOT_SS ]
+"82
+[s S6 :5 `uc 1 :1 `uc 1 ]
+[n S6 . . nSS ]
+"86
+[s S7 :5 `uc 1 :1 `uc 1 ]
+[n S7 . . LVDIN ]
+"90
+[s S8 :5 `uc 1 :1 `uc 1 ]
+[n S8 . . HLVDIN ]
+"94
+[s S9 :1 `uc 1 :6 `uc 1 :1 `uc 1 ]
+[n S9 . ULPWUIN . RJPU ]
+"58
+[u S1 `S2 1 `S3 1 `S4 1 `S5 1 `S6 1 `S7 1 `S8 1 `S9 1 ]
+[n S1 . . . . . . . . . ]
+"100
+[v _PORTAbits `VS1 ~T0 @X0 0 e@3968 ]
+"66 spi1.h
+[v _SPI1_ExchangeByte `(uc ~T0 @X0 0 ef1`uc ]
+"887 D:\MPlab\pic\include\proc\pic18f4620.h
+[s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"897
+[s S39 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S39 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 LA7 ]
+"886
+[u S37 `S38 1 `S39 1 ]
+[n S37 . . . ]
+"908
+[v _LATAbits `VS37 ~T0 @X0 0 e@3977 ]
+[v F38 `(v ~T0 @X0 1 tf1`ul ]
+"12 D:\MPlab\pic\include\builtins.h
+[v __delay `JF38 ~T0 @X0 0 e ]
+[p i __delay ]
+"55 D:\MPlab\pic\include\proc\pic18f4620.h
+[; <" PORTA equ 0F80h ;# ">
+"192
+[; <" PORTB equ 0F81h ;# ">
+"363
+[; <" PORTC equ 0F82h ;# ">
+"538
+[; <" PORTD equ 0F83h ;# ">
+"680
+[; <" PORTE equ 0F84h ;# ">
+"883
+[; <" LATA equ 0F89h ;# ">
+"995
+[; <" LATB equ 0F8Ah ;# ">
+"1107
+[; <" LATC equ 0F8Bh ;# ">
+"1219
+[; <" LATD equ 0F8Ch ;# ">
+"1331
+[; <" LATE equ 0F8Dh ;# ">
+"1383
+[; <" TRISA equ 0F92h ;# ">
+"1388
+[; <" DDRA equ 0F92h ;# ">
+"1605
+[; <" TRISB equ 0F93h ;# ">
+"1610
+[; <" DDRB equ 0F93h ;# ">
+"1827
+[; <" TRISC equ 0F94h ;# ">
+"1832
+[; <" DDRC equ 0F94h ;# ">
+"2049
+[; <" TRISD equ 0F95h ;# ">
+"2054
+[; <" DDRD equ 0F95h ;# ">
+"2271
+[; <" TRISE equ 0F96h ;# ">
+"2276
+[; <" DDRE equ 0F96h ;# ">
+"2435
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2500
+[; <" PIE1 equ 0F9Dh ;# ">
+"2577
+[; <" PIR1 equ 0F9Eh ;# ">
+"2654
+[; <" IPR1 equ 0F9Fh ;# ">
+"2731
+[; <" PIE2 equ 0FA0h ;# ">
+"2797
+[; <" PIR2 equ 0FA1h ;# ">
+"2863
+[; <" IPR2 equ 0FA2h ;# ">
+"2929
+[; <" EECON1 equ 0FA6h ;# ">
+"2995
+[; <" EECON2 equ 0FA7h ;# ">
+"3002
+[; <" EEDATA equ 0FA8h ;# ">
+"3009
+[; <" EEADR equ 0FA9h ;# ">
+"3016
+[; <" EEADRH equ 0FAAh ;# ">
+"3023
+[; <" RCSTA equ 0FABh ;# ">
+"3028
+[; <" RCSTA1 equ 0FABh ;# ">
+"3233
+[; <" TXSTA equ 0FACh ;# ">
+"3238
+[; <" TXSTA1 equ 0FACh ;# ">
+"3489
+[; <" TXREG equ 0FADh ;# ">
+"3494
+[; <" TXREG1 equ 0FADh ;# ">
+"3501
+[; <" RCREG equ 0FAEh ;# ">
+"3506
+[; <" RCREG1 equ 0FAEh ;# ">
+"3513
+[; <" SPBRG equ 0FAFh ;# ">
+"3518
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3525
+[; <" SPBRGH equ 0FB0h ;# ">
+"3532
+[; <" T3CON equ 0FB1h ;# ">
+"3644
+[; <" TMR3 equ 0FB2h ;# ">
+"3651
+[; <" TMR3L equ 0FB2h ;# ">
+"3658
+[; <" TMR3H equ 0FB3h ;# ">
+"3665
+[; <" CMCON equ 0FB4h ;# ">
+"3755
+[; <" CVRCON equ 0FB5h ;# ">
+"3834
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3916
+[; <" PWM1CON equ 0FB7h ;# ">
+"3986
+[; <" BAUDCON equ 0FB8h ;# ">
+"3991
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4158
+[; <" CCP2CON equ 0FBAh ;# ">
+"4237
+[; <" CCPR2 equ 0FBBh ;# ">
+"4244
+[; <" CCPR2L equ 0FBBh ;# ">
+"4251
+[; <" CCPR2H equ 0FBCh ;# ">
+"4258
+[; <" CCP1CON equ 0FBDh ;# ">
+"4355
+[; <" CCPR1 equ 0FBEh ;# ">
+"4362
+[; <" CCPR1L equ 0FBEh ;# ">
+"4369
+[; <" CCPR1H equ 0FBFh ;# ">
+"4376
+[; <" ADCON2 equ 0FC0h ;# ">
+"4447
+[; <" ADCON1 equ 0FC1h ;# ">
+"4532
+[; <" ADCON0 equ 0FC2h ;# ">
+"4651
+[; <" ADRES equ 0FC3h ;# ">
+"4658
+[; <" ADRESL equ 0FC3h ;# ">
+"4665
+[; <" ADRESH equ 0FC4h ;# ">
+"4672
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4734
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4804
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5025
+[; <" SSPADD equ 0FC8h ;# ">
+"5032
+[; <" SSPBUF equ 0FC9h ;# ">
+"5039
+[; <" T2CON equ 0FCAh ;# ">
+"5110
+[; <" PR2 equ 0FCBh ;# ">
+"5115
+[; <" MEMCON equ 0FCBh ;# ">
+"5220
+[; <" TMR2 equ 0FCCh ;# ">
+"5227
+[; <" T1CON equ 0FCDh ;# ">
+"5330
+[; <" TMR1 equ 0FCEh ;# ">
+"5337
+[; <" TMR1L equ 0FCEh ;# ">
+"5344
+[; <" TMR1H equ 0FCFh ;# ">
+"5351
+[; <" RCON equ 0FD0h ;# ">
+"5484
+[; <" WDTCON equ 0FD1h ;# ">
+"5512
+[; <" HLVDCON equ 0FD2h ;# ">
+"5517
+[; <" LVDCON equ 0FD2h ;# ">
+"5782
+[; <" OSCCON equ 0FD3h ;# ">
+"5859
+[; <" T0CON equ 0FD5h ;# ">
+"5936
+[; <" TMR0 equ 0FD6h ;# ">
+"5943
+[; <" TMR0L equ 0FD6h ;# ">
+"5950
+[; <" TMR0H equ 0FD7h ;# ">
+"5957
+[; <" STATUS equ 0FD8h ;# ">
+"6028
+[; <" FSR2 equ 0FD9h ;# ">
+"6035
+[; <" FSR2L equ 0FD9h ;# ">
+"6042
+[; <" FSR2H equ 0FDAh ;# ">
+"6049
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6056
+[; <" PREINC2 equ 0FDCh ;# ">
+"6063
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6070
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6077
+[; <" INDF2 equ 0FDFh ;# ">
+"6084
+[; <" BSR equ 0FE0h ;# ">
+"6091
+[; <" FSR1 equ 0FE1h ;# ">
+"6098
+[; <" FSR1L equ 0FE1h ;# ">
+"6105
+[; <" FSR1H equ 0FE2h ;# ">
+"6112
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6119
+[; <" PREINC1 equ 0FE4h ;# ">
+"6126
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6133
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6140
+[; <" INDF1 equ 0FE7h ;# ">
+"6147
+[; <" WREG equ 0FE8h ;# ">
+"6159
+[; <" FSR0 equ 0FE9h ;# ">
+"6166
+[; <" FSR0L equ 0FE9h ;# ">
+"6173
+[; <" FSR0H equ 0FEAh ;# ">
+"6180
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6187
+[; <" PREINC0 equ 0FECh ;# ">
+"6194
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6201
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6208
+[; <" INDF0 equ 0FEFh ;# ">
+"6215
+[; <" INTCON3 equ 0FF0h ;# ">
+"6307
+[; <" INTCON2 equ 0FF1h ;# ">
+"6377
+[; <" INTCON equ 0FF2h ;# ">
+"6494
+[; <" PROD equ 0FF3h ;# ">
+"6501
+[; <" PRODL equ 0FF3h ;# ">
+"6508
+[; <" PRODH equ 0FF4h ;# ">
+"6515
+[; <" TABLAT equ 0FF5h ;# ">
+"6524
+[; <" TBLPTR equ 0FF6h ;# ">
+"6531
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6538
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6545
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6554
+[; <" PCLAT equ 0FF9h ;# ">
+"6561
+[; <" PC equ 0FF9h ;# ">
+"6568
+[; <" PCL equ 0FF9h ;# ">
+"6575
+[; <" PCLATH equ 0FFAh ;# ">
+"6582
+[; <" PCLATU equ 0FFBh ;# ">
+"6589
+[; <" STKPTR equ 0FFCh ;# ">
+"6695
+[; <" TOS equ 0FFDh ;# ">
+"6702
+[; <" TOSL equ 0FFDh ;# ">
+"6709
+[; <" TOSH equ 0FFEh ;# ">
+"6716
+[; <" TOSU equ 0FFFh ;# ">
+"135 ILI9341.h
+[v __width `ui ~T0 @X0 1 e ]
+"136
+[v __height `ui ~T0 @X0 1 e ]
+"137
+[v _rotation `uc ~T0 @X0 1 e ]
+"142
+[v _initcmd `Cuc ~T0 @X0 -> 0 `x e ]
+[i _initcmd
+:U ..
+"143
+-> -> 239 `i `uc
+-> -> 3 `i `uc
+-> -> 3 `i `uc
+-> -> 128 `i `uc
+-> -> 2 `i `uc
+"144
+-> -> 207 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 193 `i `uc
+-> -> 48 `i `uc
+"145
+-> -> 237 `i `uc
+-> -> 4 `i `uc
+-> -> 100 `i `uc
+-> -> 3 `i `uc
+-> -> 18 `i `uc
+-> -> 129 `i `uc
+"146
+-> -> 232 `i `uc
+-> -> 3 `i `uc
+-> -> 133 `i `uc
+-> -> 0 `i `uc
+-> -> 120 `i `uc
+"147
+-> -> 203 `i `uc
+-> -> 5 `i `uc
+-> -> 57 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 2 `i `uc
+"148
+-> -> 247 `i `uc
+-> -> 1 `i `uc
+-> -> 32 `i `uc
+"149
+-> -> 234 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+"150
+-> -> 192 `i `uc
+-> -> 1 `i `uc
+-> -> 35 `i `uc
+"151
+-> -> 193 `i `uc
+-> -> 1 `i `uc
+-> -> 16 `i `uc
+"152
+-> -> 197 `i `uc
+-> -> 2 `i `uc
+-> -> 62 `i `uc
+-> -> 40 `i `uc
+"153
+-> -> 199 `i `uc
+-> -> 1 `i `uc
+-> -> 134 `i `uc
+"154
+-> -> 54 `i `uc
+-> -> 1 `i `uc
+-> -> 72 `i `uc
+"155
+-> -> 55 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+"156
+-> -> 58 `i `uc
+-> -> 1 `i `uc
+-> -> 85 `i `uc
+"157
+-> -> 177 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 24 `i `uc
+"158
+-> -> 182 `i `uc
+-> -> 3 `i `uc
+-> -> 8 `i `uc
+-> -> 130 `i `uc
+-> -> 39 `i `uc
+"159
+-> -> 242 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+"160
+-> -> 38 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+"161
+-> -> 224 `i `uc
+-> -> 15 `i `uc
+-> -> 15 `i `uc
+-> -> 49 `i `uc
+-> -> 43 `i `uc
+-> -> 12 `i `uc
+-> -> 14 `i `uc
+-> -> 8 `i `uc
+"162
+-> -> 78 `i `uc
+-> -> 241 `i `uc
+-> -> 55 `i `uc
+-> -> 7 `i `uc
+-> -> 16 `i `uc
+-> -> 3 `i `uc
+-> -> 14 `i `uc
+-> -> 9 `i `uc
+-> -> 0 `i `uc
+"163
+-> -> 225 `i `uc
+-> -> 15 `i `uc
+-> -> 0 `i `uc
+-> -> 14 `i `uc
+-> -> 20 `i `uc
+-> -> 3 `i `uc
+-> -> 17 `i `uc
+-> -> 7 `i `uc
+"164
+-> -> 49 `i `uc
+-> -> 193 `i `uc
+-> -> 72 `i `uc
+-> -> 8 `i `uc
+-> -> 15 `i `uc
+-> -> 12 `i `uc
+-> -> 49 `i `uc
+-> -> 54 `i `uc
+-> -> 15 `i `uc
+"165
+-> -> 17 `i `uc
+-> -> 128 `i `uc
+"166
+-> -> 41 `i `uc
+-> -> 128 `i `uc
+"168
+-> -> 0 `i `uc
+..
+]
+"15 system.h
+[p x OSC=HSPLL ]
+"16
+[p x FCMEN=OFF ]
+"17
+[p x IESO=OFF ]
+"20
+[p x PWRT=OFF ]
+"21
+[p x BOREN=OFF ]
+"22
+[p x BORV=3 ]
+"25
+[p x WDT=OFF ]
+"26
+[p x WDTPS=32768 ]
+"29
+[p x CCP2MX=PORTC ]
+"30
+[p x PBADEN=OFF ]
+"31
+[p x LPT1OSC=OFF ]
+"32
+[p x MCLRE=OFF ]
+"35
+[p x STVREN=OFF ]
+"36
+[p x LVP=OFF ]
+"37
+[p x XINST=OFF ]
+"40
+[p x CP0=OFF ]
+"41
+[p x CP1=OFF ]
+"42
+[p x CP2=OFF ]
+"43
+[p x CP3=OFF ]
+"46
+[p x CPB=OFF ]
+"47
+[p x CPD=OFF ]
+"50
+[p x WRT0=OFF ]
+"51
+[p x WRT1=OFF ]
+"52
+[p x WRT2=OFF ]
+"53
+[p x WRT3=OFF ]
+"56
+[p x WRTC=OFF ]
+"57
+[p x WRTB=OFF ]
+"58
+[p x WRTD=OFF ]
+"61
+[p x EBTR0=OFF ]
+"62
+[p x EBTR1=OFF ]
+"63
+[p x EBTR2=OFF ]
+"64
+[p x EBTR3=OFF ]
+"67
+[p x EBTRB=OFF ]
+"54 ILI9341.c
+[v _startWrite `(v ~T0 @X0 1 ef ]
+{
+[e :U _startWrite ]
+[f ]
+"56
+[e :U 269 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 268 ]
+"57
+[e :UE 266 ]
+}
+"66
+[v _endWrite `(v ~T0 @X0 1 ef ]
+{
+[e :U _endWrite ]
+[f ]
+"67
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+"68
+[e :U 273 ]
+{
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 272 ]
+"69
+[e :UE 270 ]
+}
+"81
+[v _writeCommand `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _writeCommand ]
+[v _cmd `uc ~T0 @X0 1 r1 ]
+[f ]
+"82
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"83
+[e ( _SPI1_ExchangeByte (1 _cmd ]
+"84
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+"85
+[e :UE 274 ]
+}
+"94
+[v _tft_begin `(v ~T0 @X0 1 ef ]
+{
+[e :U _tft_begin ]
+[f ]
+"98
+[e :U 278 ]
+{
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 277 ]
+"103
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"104
+[e :U 281 ]
+{
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 280 ]
+"107
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"108
+[e :U 284 ]
+{
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 283 ]
+"111
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"116
+[e :U 287 ]
+{
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 286 ]
+"122
+[e ( _startWrite ..  ]
+"124
+[v _cmd `uc ~T0 @X0 1 a ]
+[v _x `uc ~T0 @X0 1 a ]
+[v _numArgs `uc ~T0 @X0 1 a ]
+"125
+[v _addr `*Cuc ~T0 @X0 1 a ]
+[e = _addr &U _initcmd ]
+"126
+[e = _cmd *U ++ _addr * -> -> 1 `i `x -> -> # *U _addr `i `x ]
+"127
+[e $U 288  ]
+[e :U 289 ]
+{
+"128
+[e ( _writeCommand (1 _cmd ]
+"129
+[e = _x *U ++ _addr * -> -> 1 `i `x -> -> # *U _addr `i `x ]
+"130
+[e = _numArgs -> & -> _x `i -> 127 `i `uc ]
+"131
+[e $U 291  ]
+[e :U 292 ]
+[e ( _SPI1_ExchangeByte (1 *U ++ _addr * -> -> 1 `i `x -> -> # *U _addr `i `x ]
+[e :U 291 ]
+[e $ != -> -- _numArgs -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 292  ]
+[e :U 293 ]
+"133
+[e $ ! != & -> _x `i -> 128 `i -> 0 `i 294  ]
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[e :U 294 ]
+"134
+[e = _cmd *U ++ _addr * -> -> 1 `i `x -> -> # *U _addr `i `x ]
+"135
+}
+[e :U 288 ]
+"127
+[e $ > -> _cmd `i -> 0 `i 289  ]
+[e :U 290 ]
+"137
+[e ( _endWrite ..  ]
+"139
+[e = __width -> -> 240 `i `ui ]
+"140
+[e = __height -> -> 320 `i `ui ]
+"141
+[e = _rotation -> -> 0 `i `uc ]
+"142
+[e :UE 275 ]
+}
+"153
+[v _setAddrWindow `(v ~T0 @X0 1 ef4`ui`ui`ui`ui ]
+{
+[e :U _setAddrWindow ]
+[v _x1 `ui ~T0 @X0 1 r1 ]
+[v _y1 `ui ~T0 @X0 1 r2 ]
+[v _w `ui ~T0 @X0 1 r3 ]
+[v _h `ui ~T0 @X0 1 r4 ]
+[f ]
+"154
+[v _x2 `ui ~T0 @X0 1 a ]
+[e = _x2 - + _x1 _w -> -> 1 `i `ui ]
+"155
+[v _y2 `ui ~T0 @X0 1 a ]
+[e = _y2 - + _y1 _h -> -> 1 `i `ui ]
+"156
+[e ( _writeCommand (1 -> -> 42 `i `uc ]
+"157
+[e ( _SPI1_ExchangeByte (1 -> >> _x1 -> 8 `i `uc ]
+"158
+[e ( _SPI1_ExchangeByte (1 -> _x1 `uc ]
+"159
+[e ( _SPI1_ExchangeByte (1 -> >> _x2 -> 8 `i `uc ]
+"160
+[e ( _SPI1_ExchangeByte (1 -> _x2 `uc ]
+"161
+[e ( _writeCommand (1 -> -> 43 `i `uc ]
+"162
+[e ( _SPI1_ExchangeByte (1 -> >> _y1 -> 8 `i `uc ]
+"163
+[e ( _SPI1_ExchangeByte (1 -> _y1 `uc ]
+"164
+[e ( _SPI1_ExchangeByte (1 -> >> _y2 -> 8 `i `uc ]
+"165
+[e ( _SPI1_ExchangeByte (1 -> _y2 `uc ]
+"166
+[e ( _writeCommand (1 -> -> 44 `i `uc ]
+"167
+[e :UE 295 ]
+}
+"175
+[v _setRotation `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _setRotation ]
+[v _m `uc ~T0 @X0 1 r1 ]
+[f ]
+"176
+[e = _rotation -> % -> _m `i -> 4 `i `uc ]
+"177
+[e $U 298  ]
+{
+"178
+[e :U 299 ]
+"179
+[e = _m -> | -> 64 `i -> 8 `i `uc ]
+"180
+[e = __width -> -> 240 `i `ui ]
+"181
+[e = __height -> -> 320 `i `ui ]
+"182
+[e $U 297  ]
+"183
+[e :U 300 ]
+"184
+[e = _m -> | -> 32 `i -> 8 `i `uc ]
+"185
+[e = __width -> -> 320 `i `ui ]
+"186
+[e = __height -> -> 240 `i `ui ]
+"187
+[e $U 297  ]
+"188
+[e :U 301 ]
+"189
+[e = _m -> | -> 128 `i -> 8 `i `uc ]
+"190
+[e = __width -> -> 240 `i `ui ]
+"191
+[e = __height -> -> 320 `i `ui ]
+"192
+[e $U 297  ]
+"193
+[e :U 302 ]
+"194
+[e = _m -> | | | -> 64 `i -> 128 `i -> 32 `i -> 8 `i `uc ]
+"195
+[e = __width -> -> 320 `i `ui ]
+"196
+[e = __height -> -> 240 `i `ui ]
+"197
+[e $U 297  ]
+"198
+}
+[e $U 297  ]
+"177
+[e :U 298 ]
+[e [\ _rotation , $ -> -> 0 `i `uc 299
+ , $ -> -> 1 `i `uc 300
+ , $ -> -> 2 `i `uc 301
+ , $ -> -> 3 `i `uc 302
+ 297 ]
+"198
+[e :U 297 ]
+"200
+[e ( _startWrite ..  ]
+"201
+[e ( _writeCommand (1 -> -> 54 `i `uc ]
+"202
+[e ( _SPI1_ExchangeByte (1 _m ]
+"203
+[e ( _endWrite ..  ]
+"204
+[e :UE 296 ]
+}
+"206
+[v _drawPixel `(v ~T0 @X0 1 ef3`ui`ui`ui ]
+{
+[e :U _drawPixel ]
+[v _x `ui ~T0 @X0 1 r1 ]
+[v _y `ui ~T0 @X0 1 r2 ]
+[v _color `ui ~T0 @X0 1 r3 ]
+[f ]
+"207
+[e $ ! && < _x __width < _y __height 304  ]
+{
+"208
+[e ( _startWrite ..  ]
+"209
+[e ( _setAddrWindow (4 , , , _x _y -> -> 1 `i `ui -> -> 1 `i `ui ]
+"210
+[e ( _SPI1_ExchangeByte (1 -> >> _color -> 8 `i `uc ]
+"211
+[e ( _SPI1_ExchangeByte (1 -> & _color -> -> 255 `i `ui `uc ]
+"212
+[e ( _endWrite ..  ]
+"213
+}
+[e :U 304 ]
+"214
+[e :UE 303 ]
+}
+"225
+[v _drawHLine `(v ~T0 @X0 1 ef4`ui`ui`ui`ui ]
+{
+[e :U _drawHLine ]
+[v _x `ui ~T0 @X0 1 r1 ]
+[v _y `ui ~T0 @X0 1 r2 ]
+[v _w `ui ~T0 @X0 1 r3 ]
+[v _color `ui ~T0 @X0 1 r4 ]
+[f ]
+"226
+[e $ ! && && < _x __width < _y __height != _w -> -> 0 `i `ui 306  ]
+{
+"227
+[v _hi `uc ~T0 @X0 1 a ]
+[e = _hi -> >> _color -> 8 `i `uc ]
+[v _lo `uc ~T0 @X0 1 a ]
+[e = _lo -> _color `uc ]
+"229
+[e $ ! >= - + _x _w -> -> 1 `i `ui __width 307  ]
+"230
+[e = _w - __width _x ]
+[e :U 307 ]
+"231
+[e ( _startWrite ..  ]
+"232
+[e ( _setAddrWindow (4 , , , _x _y _w -> -> 1 `i `ui ]
+"233
+[e $U 308  ]
+[e :U 309 ]
+{
+"234
+[e ( _SPI1_ExchangeByte (1 _hi ]
+"235
+[e ( _SPI1_ExchangeByte (1 _lo ]
+"236
+}
+[e :U 308 ]
+"233
+[e $ != -- _w -> -> 1 `i `ui -> -> 0 `i `ui 309  ]
+[e :U 310 ]
+"237
+[e ( _endWrite ..  ]
+"238
+}
+[e :U 306 ]
+"239
+[e :UE 305 ]
+}
+"250
+[v _drawVLine `(v ~T0 @X0 1 ef4`ui`ui`ui`ui ]
+{
+[e :U _drawVLine ]
+[v _x `ui ~T0 @X0 1 r1 ]
+[v _y `ui ~T0 @X0 1 r2 ]
+[v _h `ui ~T0 @X0 1 r3 ]
+[v _color `ui ~T0 @X0 1 r4 ]
+[f ]
+"251
+[e $ ! && && < _x __width < _y __height != _h -> -> 0 `i `ui 312  ]
+{
+"252
+[v _hi `uc ~T0 @X0 1 a ]
+[e = _hi -> >> _color -> 8 `i `uc ]
+[v _lo `uc ~T0 @X0 1 a ]
+[e = _lo -> _color `uc ]
+"253
+[e $ ! >= - + _y _h -> -> 1 `i `ui __height 313  ]
+"254
+[e = _h - __height _y ]
+[e :U 313 ]
+"255
+[e ( _startWrite ..  ]
+"256
+[e ( _setAddrWindow (4 , , , _x _y -> -> 1 `i `ui _h ]
+"257
+[e $U 314  ]
+[e :U 315 ]
+{
+"258
+[e ( _SPI1_ExchangeByte (1 _hi ]
+"259
+[e ( _SPI1_ExchangeByte (1 _lo ]
+"260
+}
+[e :U 314 ]
+"257
+[e $ != -- _h -> -> 1 `i `ui -> -> 0 `i `ui 315  ]
+[e :U 316 ]
+"261
+[e ( _endWrite ..  ]
+"262
+}
+[e :U 312 ]
+"263
+[e :UE 311 ]
+}
+"275
+[v _fillRect `(v ~T0 @X0 1 ef5`ui`ui`ui`ui`ui ]
+{
+[e :U _fillRect ]
+[v _x `ui ~T0 @X0 1 r1 ]
+[v _y `ui ~T0 @X0 1 r2 ]
+[v _w `ui ~T0 @X0 1 r3 ]
+[v _h `ui ~T0 @X0 1 r4 ]
+[v _color `ui ~T0 @X0 1 r5 ]
+[f ]
+"276
+[e $ ! && != _w -> -> 0 `i `ui != _h -> -> 0 `i `ui 318  ]
+{
+"277
+[v _hi `uc ~T0 @X0 1 a ]
+[e = _hi -> >> _color -> 8 `i `uc ]
+[v _lo `uc ~T0 @X0 1 a ]
+[e = _lo -> _color `uc ]
+"278
+[e $ ! || >= _x __width >= _y __height 319  ]
+"279
+[e $UE 317  ]
+[e :U 319 ]
+"280
+[e $ ! >= - + _x _w -> -> 1 `i `ui __width 320  ]
+"281
+[e = _w - __width _x ]
+[e :U 320 ]
+"282
+[e $ ! >= - + _y _h -> -> 1 `i `ui __height 321  ]
+"283
+[e = _h - __height _y ]
+[e :U 321 ]
+"284
+[e ( _startWrite ..  ]
+"285
+[e ( _setAddrWindow (4 , , , _x _y _w _h ]
+"286
+[v _px `ul ~T0 @X0 1 a ]
+[e = _px * -> _w `ul -> _h `ul ]
+"287
+[e $U 322  ]
+[e :U 323 ]
+{
+"288
+[e ( _SPI1_ExchangeByte (1 _hi ]
+"289
+[e ( _SPI1_ExchangeByte (1 _lo ]
+"290
+}
+[e :U 322 ]
+"287
+[e $ != -- _px -> -> -> 1 `i `l `ul -> -> 0 `i `ul 323  ]
+[e :U 324 ]
+"291
+[e ( _endWrite ..  ]
+"292
+}
+[e :U 318 ]
+"293
+[e :UE 317 ]
+}
+"301
+[v _fillScreen `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _fillScreen ]
+[v _color `ui ~T0 @X0 1 r1 ]
+[f ]
+"302
+[e ( _fillRect (4 , , , , -> -> 0 `i `ui -> -> 0 `i `ui __width __height _color ]
+"303
+[e :UE 325 ]
+}
